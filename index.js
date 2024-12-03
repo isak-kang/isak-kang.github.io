@@ -65,25 +65,25 @@ let init = function () {
 
 init();
 
-// 모달
-const $modalBg = document.getElementsByClassName("modal-background");
-const $btnOpen = document.getElementsByClassName("btn-open");
-const $btnClose = document.getElementsByClassName("btn-close");
+// // 모달
+// const $modalBg = document.getElementsByClassName("modal-background");
+// const $btnOpen = document.getElementsByClassName("btn-open");
+// const $btnClose = document.getElementsByClassName("btn-close");
 
-function modal(num) {
-  $btnOpen[num].addEventListener("click", () => {
-    $modalBg[num].style.display = "flex";
-    document.body.style.overflow = "hidden";
-  });
-  $btnClose[num].addEventListener("click", () => {
-    $modalBg[num].style.display = "none";
-    document.body.style.overflow = "unset";
-  });
-}
+// function modal(num) {
+//   $btnOpen[num].addEventListener("click", () => {
+//     $modalBg[num].style.display = "flex";
+//     document.body.style.overflow = "hidden";
+//   });
+//   $btnClose[num].addEventListener("click", () => {
+//     $modalBg[num].style.display = "none";
+//     document.body.style.overflow = "unset";
+//   });
+// }
 
-for (let i = 0; i < $btnOpen.length; i++) {
-  modal(i);
-}
+// for (let i = 0; i < $btnOpen.length; i++) {
+//   modal(i);
+// }
 
 
 
@@ -113,3 +113,53 @@ window.addEventListener(
 
 
 
+
+// 모달 및 슬라이드
+const $modalBg = document.getElementsByClassName("modal-background");
+const $btnOpen = document.getElementsByClassName("btn-open");
+const $btnClose = document.getElementsByClassName("btn-close");
+const $btnNext1 = document.getElementsByClassName("btn-next");
+const $btnPrev1 = document.getElementsByClassName("btn-prev");
+const $modalItems = document.querySelectorAll(".modal-item");
+
+// 현재 슬라이드 상태를 저장하는 변수
+let currentSlide = 0;
+
+function modal(num) {
+  // 모달 열기
+  $btnOpen[num]?.addEventListener("click", () => {
+    $modalBg[num].style.display = "flex";
+    document.body.style.overflow = "hidden";
+    showSlide(0); // 모달 열 때 첫 번째 슬라이드 표시
+  });
+
+  // 모달 닫기
+  $btnClose[num]?.addEventListener("click", () => {
+    $modalBg[num].style.display = "none";
+    document.body.style.overflow = "unset";
+  });
+
+  // 다음 슬라이드
+  $btnNext1[num]?.addEventListener("click", () => {
+    currentSlide = (currentSlide + 1) % $modalItems.length;
+    showSlide(currentSlide);
+  });
+
+  // 이전 슬라이드
+  $btnPrev1[num]?.addEventListener("click", () => {
+    currentSlide = (currentSlide - 1 + $modalItems.length) % $modalItems.length;
+    showSlide(currentSlide);
+  });
+}
+
+// 슬라이드 표시 함수
+function showSlide(index) {
+  $modalItems.forEach((item, idx) => {
+    item.classList.toggle("active", idx === index);
+  });
+}
+
+// 모달 초기화
+for (let i = 0; i < $btnOpen.length; i++) {
+  modal(i);
+}
