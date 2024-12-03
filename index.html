@@ -1,11 +1,220 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <p>강이삭을 소개합니다.</p>
-</body>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>강이삭 (isak)</title>
+    <link rel="stylesheet" href="style/reset.css" />
+    <link rel="stylesheet" href="style/style.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="src/img/favicon.png"
+    />
+  </head>
+  <body>
+    <main id="app">
+      <section class="section-intro">
+        <!-- 이동바 -->
+        <header id="header">
+          <h1 class="txt-invisible">Portfolio</h1>
+          <nav>
+            <ul class="nav-list">
+              <li><a href="#about" class="list-link">About</a></li>
+              <li><a href="#project" class="list-link">Project</a></li>
+              <li><a href="#contact" class="list-link">Contact</a></li>
+              <li>
+                <a
+                  href="https://github.com/isak-kang/isak-kang.github.io"
+                  class="list-link btn-code"
+                  >code</a
+                >
+              </li>
+            </ul>
+          </nav>
+          <div class="bar-bg">
+            <span class="bar-ing"></span>
+          </div>
+        </header>
+
+
+        <!-- 메인 -->
+        <div class="cont-intro">
+          <a name="info"></a>
+          <img src="src/img/profile.png" alt="프로필 이미지" />
+          <div>
+            <p class="txt-title">안녕하세요.<br>개발자 강이삭입니다.</p>
+            <a href="#about" class="btn-more">More</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-about">
+        <a name="about"></a>
+        <h2>About.</h2>
+        <div class="cont-about">
+          <div class="slide-container">
+            <div class="slide-album">
+              <div class="slide-images">
+                <img src="src/img/img-me-1.jpg" alt="내 사진" />
+                <img src="src/img/img-me-2.jpg" alt="내 사진" />
+                <img src="src/img/img-me-3.png" alt="내 사진" />
+                <img src="src/img/img-me-4.jpg" alt="내 사진" />
+                <!-- <img src="src/img/img-me-5.jpg" alt="내 사진" /> -->
+              </div>
+              <button class="btn-next">▶</button>
+              <button class="btn-prev">◀</button>
+            </div>
+          </div>
+          <div class="info-about">
+            <dl class="txt-about">
+              <div>
+                <dt>이름</dt>
+                <dd>강이삭</dd>
+              </div>
+              <div>
+                <dt>생년월일</dt>
+                <dd>99.06.17</dd>
+              </div>
+              <div>
+                <dt>고향</dt>
+                <dd>경상남도 고성군</dd>
+              </div>
+              <div>
+                <dt>학교/전공</dt>
+                <dd>강릉원주대학교/정보통신공학과</dd>
+              </div>
+            </dl>
+            <div class="btn-about">
+              <button class="btn-open" type="button">
+                <img src="src/img/icon-diary.png" alt="" />취미
+              </button>
+              <button class="btn-open" type="button">
+                <img src="src/img/icon-mbti.png" alt="" />MBTI
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-project">
+        <a name="project"></a>
+        <h2>Project.</h2>
+        <article class="box-project">
+          <div>
+            <img
+              class="img-project"
+              src="src/img/project1.PNG"
+              alt="첫번째 프로젝트 이미지"
+            />
+            <button
+              class="btn-detail"
+              type="button"
+              onclick="location.href='https://hyerrin.github.io/movie_app/';"
+            >
+              자세히 보기
+            </button>
+          </div>
+          <div class="txt-project">
+            <h3>I Love Movie</h3>
+            <dl>
+              <dt>기간</dt>
+              <dd>2022.05</dd>
+              <dt>설명</dt>
+              <dd>영화 장르별 Top5 영화 정보를 제공하는 웹페이지입니다.</dd>
+              <dt>사용 기술</dt>
+              <dd>React</dd>
+            </dl>
+          </div>
+        </article>
+
+        <article class="box-project">
+          <div>
+            <img
+              class="img-project"
+              src="src/img/project2.png"
+              alt="두번째 프로젝트 이미지"
+            />
+            <button
+              class="btn-detail"
+              type="button"
+              onclick="location.href='https://hyerrin.github.io/ToDoList-JS/';"
+            >
+              자세히 보기
+            </button>
+          </div>
+          <div class="txt-project">
+            <h3>오늘 할 일</h3>
+            <dl>
+              <dt>기간</dt>
+              <dd>2022.04</dd>
+              <dt>설명</dt>
+              <dd>오늘 할 일을 기록하고 삭제가 가능한 웹페이지입니다.</dd>
+              <dt>사용 기술</dt>
+              <dd>HTML/CSS, JavaScript</dd>
+            </dl>
+          </div>
+        </article>
+      </section>
+
+      <footer id="footer">
+        <a name="contact"></a>
+        <div class="box-footer">
+          <h2>Contact.</h2>
+          <ul class="link-sns">
+            <li>
+              <a href="https://github.com/isak-kang"
+                ><img
+                  class="img-github"
+                  src="src/img/icon-github.png"
+                  alt="깃허브 주소"
+                />github</a
+              >
+            </li>
+            <li>
+              <a href="https://velog.io/@wbsldj59"
+                ><img
+                  class="img-velog"
+                  src="src/img/icon-velog.png"
+                  alt="블로그 주소"
+                />Blog</a
+              >
+            </li>
+          </ul>
+          <p>© 2024 - isak</p>
+        </div>
+      </footer>
+
+
+      <!-- 취미 및 mbti -->
+      <div class="modal-background">
+        <div class="modal">
+          <h3>취미</h3>
+          <h4>여행</h4>
+          <img src="src/img/img-travel.jpg" alt="여행" />
+          <p>
+            친구들과의 즐거운 여행도 좋아하고 많이 가지만
+            혼자 생각할 시간을 가지기 위한 <br>혼자 여행도 좋아합니다!
+          </p>
+          <button type="button" class="btn-close">Close</button>
+        </div>
+      </div>
+      <div class="modal-background">
+        <div class="modal">
+          <h3>MBTI</h3>
+          <h4>ISTJ(FP)</h4>
+          <img src="src/img/img-istj.jpg" alt="istj" />
+          <p>
+            평소에는 장난기 많고 조금 덤벙대는 성격이지만, <br>일할 때는 항상 계획을 세워 꼼꼼하게 하나하나 확인하는 성실한 면도 있습니다.
+          </p>
+          <button type="button" class="btn-close">Close</button>
+        </div>
+      </div>
+      <button onclick="moveToTop()" class="btn-moveTop"></button>
+      <script src="index.js"></script>
+    </main>
+  </body>
 </html>
+
