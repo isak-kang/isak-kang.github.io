@@ -7,12 +7,6 @@
     <title>강이삭 (isak)</title>
     <link rel="stylesheet" href="style/reset.css" />
     <link rel="stylesheet" href="style/style.css" />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="src/img/favicon.png"
-    />
   </head>
   <body>
     <main id="app">
@@ -94,11 +88,19 @@
               <button class="btn-open" type="button">
                 <img src="src/img/icon-mbti.png" alt="" />MBTI
               </button>
+              <button class="btn-open" type="button">
+                <img src="src/img/icon-qualification.png" alt="" />자격증
+              </button>
             </div>
           </div>
         </div>
       </section>
 
+
+
+
+
+      <!-- 무신사 -->
       <section class="section-project">
         <a name="project"></a>
         <h2>Project.</h2>
@@ -106,54 +108,84 @@
           <div>
             <img
               class="img-project"
-              src="src/img/project1.PNG"
-              alt="첫번째 프로젝트 이미지"
+              src="src/img/img-project-musinsa.png"
+              alt="무신사 프로젝트"
             />
             <button
               class="btn-detail"
               type="button"
-              onclick="location.href='https://hyerrin.github.io/movie_app/';"
+              onclick="location.href='https://github.com/isak-kang/musinsa_project';"
             >
-              자세히 보기
+              git
             </button>
           </div>
           <div class="txt-project">
-            <h3>I Love Movie</h3>
+            <h3>무신사</h3>
             <dl>
               <dt>기간</dt>
-              <dd>2022.05</dd>
+              <dd>2024.11</dd>
               <dt>설명</dt>
-              <dd>영화 장르별 Top5 영화 정보를 제공하는 웹페이지입니다.</dd>
+              <dd>무신사 랭킹 탑100의 리뷰 감성분석 및 사이즈 추천 서비스</dd>
               <dt>사용 기술</dt>
-              <dd>React</dd>
+              <dd>python, mysql, aws ec2, nginx, git</dd>
             </dl>
           </div>
         </article>
-
+        
+        <!-- 가게부 -->
         <article class="box-project">
           <div>
             <img
               class="img-project"
-              src="src/img/project2.png"
-              alt="두번째 프로젝트 이미지"
+              src="src/img/img-money.png"
+              alt="가계부"
             />
             <button
               class="btn-detail"
               type="button"
-              onclick="location.href='https://hyerrin.github.io/ToDoList-JS/';"
+              onclick="location.href='https://github.com/isak-kang/household_account_book';"
+            >
+              git
+            </button>
+          </div>
+          <div class="txt-project">
+            <h3>가계부</h3>
+            <dl>
+              <dt>기간</dt>
+              <dd>2024.08</dd>
+              <dt>설명</dt>
+              <dd>내 소비습관을 파악하기 위해 소비 내용를 저장하는 가계부 서비스</dd>
+              <dt>사용 기술</dt>
+              <dd>HTML, Flask</dd>
+            </dl>
+          </div>
+        </article>
+
+        <!-- 야구게임 -->
+        <article class="box-project">
+          <div>
+            <img
+              class="img-project"
+              src="src/img/img-project-baseballgame.png"
+              alt="야구게임"
+            />
+            <button
+              class="btn-detail"
+              type="button"
+              onclick="location.href='';"
             >
               자세히 보기
             </button>
           </div>
           <div class="txt-project">
-            <h3>오늘 할 일</h3>
+            <h3>야구게임</h3>
             <dl>
               <dt>기간</dt>
-              <dd>2022.04</dd>
+              <dd>2023.08</dd>
               <dt>설명</dt>
-              <dd>오늘 할 일을 기록하고 삭제가 가능한 웹페이지입니다.</dd>
+              <dd>어릴 때 친구들과 종이에 하던 야구게임을 구현.</dd>
               <dt>사용 기술</dt>
-              <dd>HTML/CSS, JavaScript</dd>
+              <dd>tkinter</dd>
             </dl>
           </div>
         </article>
@@ -204,7 +236,7 @@
               <h3>취미</h3>
               <h4>탁구</h4>
               <img src="src/img/img-pingpong" alt="탁구" />
-              <p>탁구는 제가 제일 좋아하는 스포츠 중 하나에요! 탁구를 치다보면 잡념이 안생겨 좋아해요 ㅎㅎ
+              <p>탁구는 제가 제일 좋아하는 스포츠 중 하나에요! 탁구를 치다보면 잡념이 사라져서 좋아해요 ㅎㅎ
               </p>
             </div>
             <button class="btn-next">▶</button>
@@ -219,9 +251,25 @@
           <h4>ISTJ(FP)</h4>
           <img src="src/img/img-istj.jpg" alt="istj" />
           <p>
-            평소에는 장난기 많고 조금 덤벙대는 성격이지만, <br>일할 때는 항상 계획을 세워 꼼꼼하게 하나하나 확인하는 성실한 면도 있습니다.
+            평소에는 장난기 많고 조금 덤벙대는 성격이지만, <br>일할 때는 항상 계획을 세워 꼼꼼하게 하나하나 확인하는 성실한 면도 있어요!
           </p>
           <button type="button" class="btn-close">Close</button>
+        </div>
+      </div>
+      <div class="modal-background">
+        <div class="modal">
+          <div class = "qualification">
+          <h3>자격증</h3>
+          <p>
+            1. AWS Certified Solutions Architect - Associate (SAA-C03) <br><br>
+            2. Red Hat Certified System Administrator (RHCSA) <br><br>
+            3. 정보처리기사 <br><br>
+            4. SQLD <br><br>
+            5. ADsP <br><br>
+            6. 컴퓨터활용능력 1급 <br><br>
+          </p>
+          <button type="button" class="btn-close">Close</button>
+          </div>
         </div>
       </div>
       <button onclick="moveToTop()" class="btn-moveTop"></button>
