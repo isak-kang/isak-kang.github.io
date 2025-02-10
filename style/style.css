@@ -258,20 +258,29 @@ body::-webkit-scrollbar {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .img-project {
+  width: 370px;
+  height: 350px; /* 원하는 높이 값 설정 */
   border-radius: 15px;
-  width: 452px;
   margin-bottom: 25px;
+  object-fit: cover;
 }
 
 .btn-detail {
   cursor: pointer;
-  padding: 10px 172px;
+  padding: 10px 20px; /* 좌우 패딩 조정 */
   border-radius: 15px;
-  border: none;
-  background-color: #6a75ca;
   border: solid 2px #6a75ca;
+  background-color: #6a75ca;
   color: white;
   font-size: 20px;
+  width: 370px;
+  text-align: center; /* 텍스트 중앙 정렬 */
+  white-space: nowrap; /* 줄바꿈 방지 */
+  overflow: hidden; /* 넘치는 내용 숨김 */
+  text-overflow: ellipsis; /* 넘치면 ... 표시 */
+  display: flex; /* flexbox 사용 */
+  justify-content: center; /* 가로 중앙 정렬 */
+  align-items: center; /* 세로 중앙 정렬 */
 }
 .btn-detail:hover {
   background-color: white;
