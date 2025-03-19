@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>강이삭 (isak)</title>
+    <link rel="stylesheet" href="../style/reset.css" />
+    <link rel="stylesheet" href="../style/style.css" />
+  </head>
+<body>
+    <main id="app">
+      <section class="section-project">
+        <a name="project"></a>
+        <h2>무신사 사이즈 추천 및 리뷰분석</h2>
+    
+        <!-- 청야기 -->
+        <article class="box-project">
+          <!-- <div>
+            <img
+              class="img-project"
+              src="src/img/청약이.png"
+              alt="청약드림"
+            />
+            <button
+            class="btn-detail"
+            type="button"
+            onclick="window.open('https://github.com/isak-kang/lgu_final_project', '_blank', 'noopener,noreferrer');"
+            >
+              자세히보기(git)
+            </button>
+          </div> -->
+          <div class="txt-project">
+            <button
+            class="btn-detail"
+            type="button"
+            onclick="window.open('https://github.com/whynotsw-camp/wh02-3rd-1team-CHEONGYAGI', '_blank', 'noopener noreferrer');"
+          >
+            Github
+          </button>
+
+            <h3>상세 내용</h3>
+            <dl>
+              <dt>기간</dt>
+              <dd>2024.11.06 ~ 2025.11.13</dd>
+              <dt>설명</dt>
+              <dd>‘무신사 리뷰를 믿을 수 있나요?’에서 시작한 프로젝트. 별점과 별개로 리뷰의 긍부정을 분석하여
+                알려주고부가적으로 자신의 성별, 몸무게, 키를 바탕으로 사이즈를 추천해주는 서비스</dd>
+              <dt>사용 기술</dt>
+              <dd>Python, FastAPI, HTML(BootStrap), ,MySQL, Nginx, Selenium, AWS, EC2</dd>
+              <dt>맡은 역할</dt>
+              <dd>웹개발, DB 구축, 서버구축, 크롤링</dd>
+              <h3>맡은 일 (상세)</h3>
+              <dt>1. 반응형 웹사이트 개발</dt>
+              <dd>
+                BootStrap을 이용해 반응형 웹사이트 개발.
+              </dd>
+              <dt>2. 크롤링</dt>
+              <dd>
+                무신사 랭킹에서 제품번호, 사진url, 제품명, 브랜드 명 등을 크롤링하고<br>
+                제품 번호를 이용하여 제품의 상세페이지, 리뷰 페이지로 들어가 리뷰와 별점, 성별을 크롤링했습니다.
+              </dd>
+              <dt>3. DB 구축</dt>
+              <dd>
+                모든 데이터를 MySQL에 저장했습니다.
+                지금 드는 생각인데 리뷰는 MongoDB에 저장을 하는게 더 좋았겠다 라는 생각이 듭니다.
+              </dd>
+              <dt>4. AWS 활용하여 WEB,DB서버 구축</dt>
+              <dd>
+                EC2로 DB서버 구축(MySQL)
+                EC2로 Web서버 구축 (FastAPI, NginX)(로컬 push-> Web서버 pull)
+              </dd>
+
+              <dt>5. 그 외</dt>
+              <dd>
+                1. 분석, 추천 모델 적용<br>
+              </dd>
+              <h3>아쉬운 점</h3>
+              <dt>1. 크롤링자동화</dt>
+              <dd>
+                EC에서 cronTab을 활용해서 자동화할려고 했는데 인스턴스가 프리티어였어서 크롤링하다가 멈추는 현상이 발생해서 못한점이 아쉬웠음.<br>
+                (그래서 그걸 보완해서 청약해드림 프로젝트할 때에 크롤링 자동화 성공 ㅎㅎ!)
+                </dd>  
+            <dt>2. 사이즈 추천모델 정확성</dt>
+            <dd>
+                내가 한 부분은 아니지만 정확도가 아쉬웠음<br>
+                정확도가 기억이 잘나지 않지만 60정도 였던거 같음. 그게 좀 아쉬웠음<br>
+                어떻게든 높히기 위해 데이터를 노가다로 크롤링했던 기억이 있는데 그렇게 했는데도 안되서 더 아쉬웠음.<br>
+                또한 제품별 사이즈 추천이 아니라 모든 제품을 통틀어서 사이즈를 추천하는거여서 그 부분이 아쉬웠음.<br>
+                시간이 더 있었다면 더 잘나왔을거 같음.<br>
+            </dd>  
+            </dl>
+          </div>
+        </article>
+      </section>>
+    </main>
+    <style>
+        .btn-detail {
+          float: right;
+          width: 150px;
+        }
+      </style>    
+</body>
+</html>
