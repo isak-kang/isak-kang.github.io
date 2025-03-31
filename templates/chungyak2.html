@@ -80,6 +80,8 @@
                   EC2로 배포 <br><br>
 
                   서버는 웹 서버와 DB 서버로 분리하여 운영하였습니다.<br><br>
+
+                  웹 서버에는 ALB를 사용하여 트래픽을 여러 서버로 분산하고, Auto Scaling을 활용하여 서버 수를 자동 조정함으로써 가용성을 높였습니다.<br><br>
                 
                   DB 서버는 MySQL과 MongoDB를 사용하였으며, 상대적으로 리소스 소모가 적어 성능이 낮은 인스턴스를 선택하여 운영하였습니다.<br><br>
                 
@@ -105,10 +107,11 @@
               </dd>
               <dt>7. 그 외</dt>
               <dd>
-                1. 최근 끝난 청약의 경쟁률, 다가오는 청약 기능<br>
-                2. NaverAPI를 통해 뉴스크롤링(자동화까지)<br>
-                3. 용어,FAQ 검색<br>
-                4. 아이디 찾기, 비밀번호 교체<br>
+                1. RAG 검색 성능 높히는 작업(아파트명, 청약일, 경쟁률, 데이터 출처 유형 등에 가중치를 적용)
+                2. 최근 끝난 청약의 경쟁률, 다가오는 청약 기능<br>
+                3. NaverAPI를 통해 뉴스크롤링(자동화까지)<br>
+                4. 용어,FAQ 검색<br>
+                5. 아이디 찾기, 비밀번호 교체<br>
                 등등...
               </dd>
               <h3>트러블 슈팅</h3>
@@ -179,8 +182,15 @@
             <br>
             <br>
             <div>
-              <h3>전체 아키텍처</h3>
+              <h3>전체</h3>
               <img src="https://github.com/user-attachments/assets/fa19354a-4210-4a2a-8077-5de4d32b2ed7" alt="" width="1000" height="600">
+              <br>
+              <br>
+              <br>
+
+              <h3>서버 아키텍처</h3>
+              <!-- <img src="https://github.com/user-attachments/assets/26cbdbdb-3b7a-4f4e-a7d5-79baf86b9392" alt="" width="1000" height="600"> -->
+              <h3>추가예정</h3>
               <br>
               <br>
               <br>
