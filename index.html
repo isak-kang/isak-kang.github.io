@@ -37,39 +37,17 @@
         </header>
 
 
-        <!-- 메인 -->
-        <div class="cont-intro">
-          <a name="info"></a>
-          <img src="src/img/profile.png" alt="프로필 이미지" />
-          <div>
-            <p class="txt-title">안녕하세요.<br>개발자 강이삭입니다.</p>
-          </div>
-        </div>
+
       </section>
 
       <section class="section-about">
         <a name="about"></a>
         <h2>About.</h2>
-        <div class="cont-about">
-          <div class="slide-container">
-            <div class="slide-album">
-              <div class="slide-images">
-                <img src="src/img/img-me-1.jpg" alt="내 사진" />
-                <img src="src/img/img-me-2.jpg" alt="내 사진" />
-                <img src="src/img/img-me-3.png" alt="내 사진" />
-                <img src="src/img/img-me-4.jpg" alt="내 사진" />
-                <!-- <img src="src/img/img-me-5.jpg" alt="내 사진" /> -->
-              </div>
-              <button class="btn-next">▶</button>
-              <button class="btn-prev">◀</button>
-            </div>
-          </div>
-          <div class="info-about">
+          <div class="info-about" > 
             <dl class="txt-about">
               <div>
                 <dt>이름</dt>
                 <dd>강이삭</dd>
-                
               </div>
               <div>
                 <dt>생년월일</dt>
@@ -92,17 +70,6 @@
                 <dd><a href="https://velog.io/@wbsldj59/posts">https://velog.io/@wbsldj59/posts</a></dd>
               </div>
             </dl>
-            <div class="btn-about">
-              <button class="btn-open" type="button">
-                <img src="src/img/icon-diary.png" alt="" />취미
-              </button>
-              <button class="btn-open" type="button">
-                <img src="src/img/icon-mbti.png" alt="" />MBTI
-              </button>
-              <button class="btn-open" type="button">
-                <img src="src/img/icon-qualification.png" alt="" />자격증
-              </button>
-            </div>
           </div>
         </div>
       </section>
@@ -115,35 +82,6 @@
       <section class="section-project">
         <a name="project"></a>
         <h2>Project.</h2>
-
-        <!-- 안심밥상 -->
-        <article class="box-project">
-          <div>
-            <img
-              class="img-project"
-              src="src/img/안심밥상.png"
-              alt="안심밥상"
-            />
-            <button
-            class="btn-detail"
-            type="button"
-            onclick="window.open('templates/ansim.pdf', '_blank', 'noopener,noreferrer');"
-            >
-            상세내용
-            </button>
-          </div>
-          <div class="txt-project">
-            <h3>안심밥상(100%)</h3>
-            <dl>
-              <dt>기간</dt>
-              <dd>2025.4.1 ~ 2025.5.9</dd>
-              <dt>설명</dt>
-              <dd>서울시 모범음식점, 행정 처분 받은 음식점 데이터를 활용한 안전한 식당 추천 사이트</dd>
-              <dt>사용 기술</dt>
-              <dd>Python,FastAPI, React, NginX, MySQL, AWS(EC2, S3, CodeDeploy,Route53, ALB, ACM, ), GitHub Action </dd>
-            </dl>
-          </div>
-        </article>
 
         <!-- 청야기 -->
         <article class="box-project">
@@ -170,64 +108,6 @@
               <dd>청약에 도움을 주는 챗봇과 여러 가지 청약 정보를 제공하는 홈페이지</dd>
               <dt>사용 기술</dt>
               <dd>Python,FastAPI, React, NginX, MongoDB, MySQL, EC2, S3, CodeDeploy, GitHub Action</dd>
-            </dl>
-          </div>
-        </article>
-        
-        <!-- 무신사 -->
-        <article class="box-project">
-          <div>
-            <img
-              class="img-project"
-              src="src/img/img-project-musinsa.png"
-              alt="무신사 프로젝트"
-            />
-            <button
-            class="btn-detail"
-            type="button"
-            onclick="window.open('templates/musinsa.html', '_blank', 'noopener,noreferrer');"
-          >
-            상세내용
-          </button>
-          </div>
-          <div class="txt-project">
-            <h3>무신사(개발 기여도 : 50%)</h3>
-            <dl>
-              <dt>기간</dt>
-              <dd>2024.11.06 ~ 2024.11.13</dd>
-              <dt>설명</dt>
-              <dd>무신사 랭킹 탑100의 리뷰 감성분석 및 사이즈 추천 서비스</dd>
-              <dt>사용 기술</dt>
-              <dd>Python, FastAPI, MySQL, EC2, Nginx</dd>
-            </dl>
-          </div>
-        </article>
-
-        <!-- 가게부 -->
-        <article class="box-project">
-          <div>
-            <img
-              class="img-project"
-              src="src/img/img-money.png"
-              alt="가계부"
-            />
-            <button
-            class="btn-detail"
-            type="button"
-            onclick="window.open('https://github.com/isak-kang/household_account_book', '_blank', 'noopener,noreferrer');"
-            >
-              자세히보기(git)
-            </button>
-          </div>
-          <div class="txt-project">
-            <h3>가계부(개발 기여도 : 80%)</h3>
-            <dl>
-              <dt>기간</dt>
-              <dd>2024.08</dd>
-              <dt>설명</dt>
-              <dd>내 소비습관을 파악하기 위해 소비 내용를 저장하는 가계부 서비스</dd>
-              <dt>사용 기술</dt>
-              <dd>HTML, Python, Flask</dd>
             </dl>
           </div>
         </article>
@@ -261,7 +141,39 @@
             </dl>
           </div>
         </article>
+
+        <article class="box-project"> 
+          <div class="txt-project" style="text-align: center;">
+            <h3 style="margin-bottom: 10px;">이 외 프로젝트</h3>
+            <dl style="display: inline-block; text-align: left;">
+              <dd style="margin: 8px 0; font-size: 18px; font-family: 'GmarketSansMedium';">
+                1. 안심밥상 (25.4.1 ~ 25.5.9)
+                <a href="templates/ansim.html"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style="font-family: 'GmarketBold'; color: #6a75ca; font-size: 22px; margin-left: 10px; text-decoration: none; border: 2px solid #6a75ca; border-radius: 6px; padding: 2px 8px; transition: all 0.2s ease-in-out;">
+                  자세히 보기
+                </a>
+              </dd>
+              <dd style="margin: 8px 0; font-size: 18px; font-family: 'GmarketSansMedium';">
+                2. 무신사 프로젝트 (24.11.6 ~ 24.11.13)
+                <a href="templates/musinsa.html"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style="font-family: 'GmarketBold'; color: #6a75ca; font-size: 22px; margin-left: 10px; text-decoration: none; border: 2px solid #6a75ca; border-radius: 6px; padding: 2px 8px; transition: all 0.2s ease-in-out;">
+                  자세히 보기
+                </a>
+              </dd>
+            </dl>
+          </div>
+
+
+        </article>
       </section>
+
+
+
+
 
       <footer id="footer">
         <a name="contact"></a>

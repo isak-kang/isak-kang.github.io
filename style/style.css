@@ -18,6 +18,8 @@ body::-webkit-scrollbar {
   display: none;
 }
 
+
+
 /* header */
 #header {
   position: fixed;
@@ -77,12 +79,8 @@ body::-webkit-scrollbar {
   display: flex;
   justify-content: center;
 }
-.cont-intro img {
-  width: 230px;
-  margin-right: 40px;
-}
 .txt-title {
-  width: 620px;
+  width: 400px;
   margin-top: 30px;
   font-size: 55px;
   font-family: "GmarketBold";
@@ -188,8 +186,12 @@ body::-webkit-scrollbar {
   right: 18px;
   top: 50%;
 }
+
+
 .info-about {
   margin: 0 0 0 60px;
+  display: flex;
+  justify-content: center; /* 가로 중앙 정렬 */
 }
 .txt-about dt {
   display: inline-block;
